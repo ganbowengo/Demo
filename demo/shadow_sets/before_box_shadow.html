@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>旋转的阴影</title>
+</head>
+<style>
+    ul,li{
+        margin: 0;
+        padding: 0;
+    }
+    ul.ulStyle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        list-style: none;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    .container{
+        width: 100px;
+        height: 100px;
+        background: #0099FF;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #eec44a,0 0 0 20px #eee;
+        margin-left: 70px;
+    }
+    .container:before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: block;
+        box-shadow: 119px 38px 0 #eee,-44px 38px 0 #eee,38px -44px 0 #eee,38px 119px 0 #eee;
+        -moz-transform-origin: 50px 50px;
+        -webkit-transform-origin: 50px 50px;
+        transform-origin: 50px 50px;
+        animation-fill-mode: both;
+
+    }
+    .start:before{
+        transform: rotate(10deg);
+        animation: circleStart 10s linear infinite;
+    }
+    .end:before{
+        animation: circleEnd 10s linear infinite;
+    }
+    @keyframes circleStart {
+        form{
+            transform: rotate(10deg);
+        }
+        to{
+            transform: rotate(370deg);
+        }
+    }
+    @keyframes circleEnd {
+        form{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(-360deg);
+        }
+    }
+</style>
+<body>
+<ul class="ulStyle">
+    <li class="container start"></li>
+    <li class="container end"></li>
+    <li class="container start"></li>
+    <li class="container end"></li>
+</ul>
+</body>
+</html>
