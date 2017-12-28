@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<style>
+    .nav_bar{
+        list-style: none;
+        margin: 20px auto;
+        padding-left: 20px;
+        display: flex;
+        background: #000080;
+        width: 1112px;
+        height: 40px;
+        color: #fff0f0;
+        cursor: pointer;
+    }
+    .nav_bar>li{
+        text-align: center;
+        line-height: 38px;
+        min-width: 80px;
+    }
+    .nav_bar>li:hover{
+        opacity: .8;
+        transition: all linear .1s;
+    }
+    .nav_bar>li:hover div{
+        width: 100%;
+        transition: all linear .3s;
+    }
+    li div{
+        height: 2px;width: 0;background: #FFF
+    }
+</style>
+<body>
+<ul class="nav_bar">
+    <li>
+        首页
+        <div></div>
+    </li>
+    <li>
+        热映
+        <div></div>
+    </li>
+    <li>
+        推荐
+        <div></div>
+    </li>
+    <li>
+        排行榜
+        <div></div>
+    </li>
+    <li>
+        排行榜
+        <div></div>
+    </li>
+</ul>
+</body>
+</html>
