@@ -1,0 +1,38 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+#mask_G{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,.6);
+}
+#loading_G{
+    min-width:180px;
+    max-width: auto;
+    height:56px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -53%);
+    -moz-transform: translate(-50%, -53%);
+    -ms-transform: translate(-50%, -53%);
+    -o-transform: translate(-50%, -53%);
+    transform: translate(-50%, -53%);
+    line-height:56px;
+    padding-left:45px;
+    padding-right:10px;
+    color:#fff;
+    text-align: center;
+    font-size:15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.6) url(wait.gif) no-repeat 10px 50%;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+}
