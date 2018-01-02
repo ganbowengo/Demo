@@ -90,7 +90,7 @@
                     let rowspan = $table.data('col-rowspan') + 1;
                     $table.data('col-rowspan', rowspan);
                     // 值得注意的是 如果用了$td.remove()就会对其他列的处理造成影响
-                    $td.hide();
+                    $td.remove();
                     // 最后一行的情况比较特殊一点
                     // 比如最后2行 td中的内容是一样的, 那么到最后一行就应该把此时的col-td里保存的td设置rowspan
                     if (++index == $table.data('trNum'))
@@ -131,8 +131,8 @@
 
             }
             for(let i = 1;i < r;i++){
-                $(selector+" tr:eq("+(c+i)+")").find("td:lt("+num+")").css("display","none");
-                $(selector+" tr:eq("+(c+i)+")").find("td:last-child").css({display:'none'});
+                $(selector+" tr:eq("+(c+i)+")").find("td:lt("+num+")").remove();
+                $(selector+" tr:eq("+(c+i)+")").find("td:last-child").remove();
             }
         }
     }
