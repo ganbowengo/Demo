@@ -9,6 +9,8 @@ demo/file -- > css写的demo
 
     4、demo/table_excel : 将table转为Excel
 
+    5、demo/table_merge : 合并指定列的单元格
+
 other/file -- > vote project
 vote project:
     html+css+javascript+angular
