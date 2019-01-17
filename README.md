@@ -1,16 +1,14 @@
 # vote
-demo/file -- > cssÐ´µÄdemo
+demo/file -- > csså†™çš„demo
 
-    1¡¢demo/mask : ¹ý¶ÉÕÚÕÖ²ã
+    1ã€demo/mask : è¿‡æ¸¡é®ç½©å±‚
 
-    2¡¢demo/navbar : µ¼º½¶¯»­
+    2ã€demo/navbar : å¯¼èˆªåŠ¨ç”»
 
-    3¡¢demo/shadow_sets : ÒõÓ°ÂÖ×Ó,Çú±ß
+    3ã€demo/shadow_sets : é˜´å½±è½®å­,æ›²è¾¹
 
-    4¡¢demo/table_excel : ½«table×ªÎªExcel
+    4ã€demo/table_excel : å°†tableè½¬ä¸ºExcel
 
-    5¡¢demo/table_merge : ºÏ²¢Ö¸¶¨ÁÐµÄµ¥Ôª¸ñ
+    5ã€demo/table_merge : åˆå¹¶æŒ‡å®šåˆ—çš„å•å…ƒæ ¼
 
-other/file -- > vote project
-vote project:
-    html+css+javascript+angular
+
