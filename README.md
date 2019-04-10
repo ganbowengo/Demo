@@ -5,7 +5,7 @@ demo/file -- > css写的demo
 
     2、demo/navbar : 导航滑动动画
 
-    3、demo/shadow_sets : 阴影轮子,曲边
+    3、demo/shadow_sets : 阴影轮子,曲边效果
 
     4、demo/table_excel : 将table转为Excel
 
