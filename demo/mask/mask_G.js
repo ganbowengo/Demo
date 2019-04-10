@@ -7,21 +7,10 @@ if(window.$===undefined){
 }
 
 var showLoading_G = function (text){
-    //var div_mask = document.createElement('div');
-    //var div_load = document.createElement('div');
-    //div_mask.setAttribute("id","mask_G");
-    //div_load.setAttribute("id","loading_G");
-    //div_load.innerHTML = text;
-    //div_mask.appendChild(div_load);
-    //document.body.appendChild(div_mask);
     var html = '<div id="mask_G"><div id="loading_G">'+text+'</div></div>';
     $("body").append(html);
 }
 var hideLoading_G = function (times){
-    //var div_mask = document.getElementById("mask_G");
-    //div_mask.style.opacity = 0;
-    //div_mask.style.display = 'none';
-    //div_mask.style.transition = 'all linear .3s';
     $("#mask_G").fadeOut(times);
     var timer = setInterval(function(){
         $("#mask_G").remove();
